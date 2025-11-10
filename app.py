@@ -85,10 +85,8 @@ def descubrete():
         genero = request.form['genero']
         actividad = float(request.form['actividad'])
 
-        # Cálculo del IMC
         imc = peso / (estatura ** 2)
 
-        # Clasificación según IMC
         if imc < 18.5:
             clasificacion = "Bajo peso"
         elif imc < 25:
@@ -98,13 +96,11 @@ def descubrete():
         else:
             clasificacion = "Obesidad"
 
-        # Cálculo de TMB (Mifflin-St Jeor)
         if genero == "masculino":
             tmb = (10 * peso) + (6.25 * (estatura * 100)) - (5 * edad) + 5
         else:
             tmb = (10 * peso) + (6.25 * (estatura * 100)) - (5 * edad) - 161
 
-        # Gasto Energético Total
         get = tmb * actividad
 
         return render_template(

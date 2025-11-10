@@ -30,18 +30,18 @@
 
                         <div class="row g-3 mb-4">
                         <div class="col">
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="First name" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" aria-label="First name" required>
                         </div>
 
                         <div class="col">
-                            <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Last name" required>
+                            <input type="text" class="form-control" id="apellido" name="apellido"placeholder="Apellido" aria-label="Last name" required>
                         </div>
                         </div>
                         <div class="mb-4">
                         <div class="text-success fs-4">
                             <img src="static\img/correo.png" class="rounded" alt="..." width="30" height="30">
                             <label for="inputEmail" class="form-label">Correo Electrónico:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Correo Electronico" required>
+                            <input type="email" class="form-control" id="email" name="correo" placeholder="Correo Electronico" required>
                         </div>
                     </div>
 
@@ -49,7 +49,7 @@
                         <div class="text-success fs-4">
                     <img src="static\img/contra.png" class="rounded" alt="..." width="30" height="30">
                     <label for="inputPassword5" class="form-label">Crea una contraseña segura:</label>
-                        <input type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock" required>
+                        <input type="password" id="password" name="contraseña" class="form-control" aria-describedby="passwordHelpBlock" required>
                         <div id="password" class="form-text">
                     </div>
                 </div>
@@ -59,13 +59,13 @@
                         <div class="col text-success fs-4">
                             <img src="static\img/aler.png" class="rounded" alt="..." width="30" height="30">
                             <label for="inputNombre" class="form-label">Preferencias o restricciones:</label>
-                            <input type="text" class="form-control" id="preferiencia" placeholder="Escribe alergias o lo que prefieras en los alimentos" required>
+                            <input type="text" class="form-control" name="preferencia" id="preferiencia" placeholder="Escribe alergias o lo que prefieras en los alimentos" required>
                         </div>
 
                         <div class="col text-success fs-4">
         <img src="static\img/objec.png" class="rounded" alt="..." width="30" height="30">
         <label for="select1" class="form-label">Objetivos:</label>
-        <select class="form-select" id="objetivo" aria-label="Primer menú de selección" required>
+        <select class="form-select" id="objetivo" name="objetivos" aria-label="Primer menú de selección" required>
             <option selected></option>
             <option value="1">Bajar de peso</option>
             <option value="2">Aumentar masa muscular</option>
@@ -79,7 +79,7 @@
     <div class="col text-success fs-4">
         <img src="static\img/coc.png" class="rounded" alt="..." width="30" height="30">
         <label for="select2" class="form-label">Nivel de experiencia en la cocina:</label>
-        <select class="form-select" id="cocina" aria-label="Segundo menú de selección" required>
+        <select class="form-select" id="cocina" name="cocina" aria-label="Segundo menú de selección" required>
             <option selected></option>
             <option value="6">Experto como todo un chef</option>
             <option value="7">Apasionado</option>
